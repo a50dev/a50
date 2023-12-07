@@ -1,0 +1,40 @@
+{
+    "name": "a50/logger",
+    "description": "A50 Logger",
+    "keywords": [
+        "a50",
+        "logger"
+    ],
+    "homepage": "https://github.com/a50/logger",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Siarhei Bautrukevich",
+            "email": "hello@bautrukevich.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "monolog/monolog": "^3.2",
+        "a50/container": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "A50\\Logger\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "A50\\Logger\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

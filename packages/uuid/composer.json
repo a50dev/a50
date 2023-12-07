@@ -1,0 +1,35 @@
+{
+    "name": "a50/uuid",
+    "description": "Uuid Provider for A50",
+    "type": "project",
+    "require": {
+        "php": "^8.1",
+        "ramsey/uuid": "^4.7",
+        "a50/container": "dev-main"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Siarhei Bautrukevich",
+            "email": "hello@bautrukevich.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "A50\\Uuid\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\A50\\Uuid\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

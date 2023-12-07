@@ -1,0 +1,39 @@
+{
+    "name": "a50/telegram",
+    "description": "A50 Telegram",
+    "keywords": [
+        "a50",
+        "telegram"
+    ],
+    "homepage": "https://github.com/a50/telegram",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Siarhei Bautrukevich",
+            "email": "hello@bautrukevich.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "telegram-bot/api": "^2.4",
+        "a50/console": "^1.1",
+        "a50/container": "dev-main",
+        "a50/http": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "A50\\Telegram\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "A50\\Telegram\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

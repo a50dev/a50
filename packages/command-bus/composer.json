@@ -1,0 +1,39 @@
+{
+    "name": "a50/command-bus",
+    "description": "Command Bus",
+    "keywords": [
+        "a50"
+    ],
+    "homepage": "https://github.com/a50dev/a50",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Siarhei Bautrukevich",
+            "email": "hello@bautrukevich.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "a50/container": "dev-main",
+        "league/tactician": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "A50\\CommandBus\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "A50\\CommandBus\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

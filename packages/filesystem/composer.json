@@ -1,0 +1,42 @@
+{
+    "name": "a50/filesystem",
+    "description": "Filesystem Provider for League Flysystem",
+    "keywords": [
+        "a50",
+        "filesystem",
+        "flysystem"
+    ],
+    "homepage": "https://github.com/a50dev/filesystem",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Siarhei Bautrukevich",
+            "email": "hello@bautrukevich.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "league/flysystem": "^3.16",
+        "league/flysystem-aws-s3-v3": "^3.16",
+        "a50/container": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "A50\\Filesystem\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "A50\\Filesystem\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

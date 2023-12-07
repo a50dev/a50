@@ -1,0 +1,51 @@
+<?php
+
+declare(strict_types=1);
+
+namespace A50\Database\Repository;
+
+use A50\Database\Repository\Exception\CouldNotGetEntityById;
+use A50\Database\Repository\Exception\CouldNotSaveEntity;
+
+interface EntityRepository
+{
+    /**
+     * @param non-empty-string $id
+     * @param non-empty-string $from
+     * @return array<string, string>
+     * @throws CouldNotGetEntityById
+     */
+    public function getById(string $id, string $from): array;
+
+    /**
+     * @param non-empty-string $id
+     * @param non-empty-string $in
+     */
+    public function hasById(string $id, string $in): bool;
+
+    /**
+     * @param array<string, bool|int|string|null> $data
+     * @param non-empty-string $to
+     * @throws CouldNotSaveEntity
+     */
+    public function save(array $data, string $to): void;
+
+    /**
+     * @param array<string, bool|int|string|null> $data
+     * @param non-empty-string $in
+     * @param array<string, bool|int|string|null> $condition
+     */
+    public function update(array $data, string $in, array $condition): void;
+
+    /**
+     * @param non-empty-string $id
+     * @param non-empty-string $in
+     */
+    public function deleteOne(string $id, string $in): void;
+
+    /**
+     * @param non-empty-string[] $ids
+     * @param non-empty-string $in
+     */
+    public function deleteMany(array $ids, string $in): void;
+}

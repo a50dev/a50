@@ -1,0 +1,178 @@
+{
+    "name": "a50/a50",
+    "authors": [
+        {
+            "name": "Siarhei Bautrukevich",
+            "email": "hello@bautrukevich.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-apcu": "*",
+        "cycle/database": "^2.4",
+        "cycle/migrations": "^4.0",
+        "cycle/schema-migrations-generator": "^2.1",
+        "doctrine/migrations": "^3.6",
+        "doctrine/sql-formatter": "^1.1",
+        "fakerphp/faker": "^1.23",
+        "filp/whoops": "^2.15",
+        "innmind/immutable": "^5.0",
+        "laminas/laminas-diactoros": "^2.7",
+        "laminas/laminas-stdlib": "^3.6",
+        "laminas/laminas-stratigility": "^3.9",
+        "league/flysystem": "^3.16",
+        "league/flysystem-aws-s3-v3": "^3.16",
+        "league/tactician": "^1.1",
+        "mezzio/mezzio": "^3.7",
+        "mezzio/mezzio-fastroute": "^3.0.3",
+        "mezzio/mezzio-helpers": "^5.7",
+        "monolog/monolog": "^3.2",
+        "php-di/php-di": "^7.0",
+        "psr/clock": "^1.0",
+        "psr/event-dispatcher": "^1.0",
+        "psr/http-message": "^1.0",
+        "psr/http-server-handler": "^1.0",
+        "psr/http-server-middleware": "^1.0",
+        "ramsey/uuid": "^4.7",
+        "symfony/console": "^6.2",
+        "symfony/mailer": "^6.3",
+        "telegram-bot/api": "^2.4",
+        "twig/twig": "^3.7",
+        "webmozart/assert": "^1.11",
+        "yiisoft/cache": "^3.0",
+        "yiisoft/db-pgsql": "^1.1"
+    },
+    "require-dev": {
+        "dg/bypass-finals": "^1.3",
+        "friendsofphp/php-cs-fixer": "^3.16",
+        "phpstan/extension-installer": "^1.2",
+        "phpstan/phpstan": "^1.10",
+        "phpstan/phpstan-phpunit": "^1.3",
+        "phpunit/phpunit": "^9.6",
+        "roave/security-advisories": "dev-latest",
+        "symplify/monorepo-builder": "11.2.3.72"
+    },
+    "autoload": {
+        "psr-4": {
+            "A50\\Clock\\": [
+                "packages/clock/src"
+            ],
+            "A50\\CommandBus\\": "packages/command-bus/src",
+            "A50\\Console\\": [
+                "packages/console/src"
+            ],
+            "A50\\Container\\": "packages/container/src",
+            "A50\\Database\\": [
+                "packages/database/src"
+            ],
+            "A50\\Directories\\": [
+                "packages/directories/src"
+            ],
+            "A50\\Environment\\": [
+                "packages/environment/src"
+            ],
+            "A50\\ErrorHandler\\": [
+                "packages/error-handler/src"
+            ],
+            "A50\\EventDispatcher\\": "packages/event-dispatcher/src",
+            "A50\\Filesystem\\": "packages/filesystem/src",
+            "A50\\Framework\\": [
+                "packages/mailer/src"
+            ],
+            "A50\\Http\\": [
+                "packages/http/src"
+            ],
+            "A50\\Logger\\": [
+                "packages/logger/src"
+            ],
+            "A50\\Mailer\\": "packages/mailer/src",
+            "A50\\Mapper\\": "packages/mapper/src",
+            "A50\\Middleware\\Cors\\": "packages/middleware-cors/src",
+            "A50\\NextPackage\\": [
+                "packages/next-package/src"
+            ],
+            "A50\\RBAC\\": "packages/rbac/src",
+            "A50\\Seeder\\": "packages/seeder/src",
+            "A50\\Telegram\\": [
+                "packages/telegram/src"
+            ],
+            "A50\\Uuid\\": [
+                "packages/uuid/src"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\A50\\Uuid\\": [
+                "packages/uuid/tests"
+            ],
+            "A50\\Clock\\Tests\\": [
+                "packages/clock/tests"
+            ],
+            "A50\\CommandBus\\Tests\\": "packages/command-bus/tests",
+            "A50\\Console\\Tests\\": "packages/console/tests",
+            "A50\\Container\\Tests\\": "packages/container/tests",
+            "A50\\Database\\Tests\\": [
+                "packages/database/tests"
+            ],
+            "A50\\Directories\\Tests\\": "packages/directories/tests",
+            "A50\\Environment\\Tests\\": [
+                "packages/environment/tests"
+            ],
+            "A50\\ErrorHandler\\Tests\\": [
+                "packages/error-handler/tests"
+            ],
+            "A50\\EventDispatcher\\Tests\\": "packages/event-dispatcher/tests",
+            "A50\\Filesystem\\Tests\\": "packages/filesystem/tests",
+            "A50\\Framework\\Tests\\": "packages/mailer/tests",
+            "A50\\Http\\Tests\\": [
+                "packages/http/tests"
+            ],
+            "A50\\Logger\\Tests\\": "packages/logger/tests",
+            "A50\\Mailer\\Tests\\": "packages/mailer/tests",
+            "A50\\Mapper\\Tests\\": "packages/mapper/tests",
+            "A50\\Middleware\\Cors\\Tests\\": "packages/middleware-cors/tests",
+            "A50\\NextPackage\\Tests\\": "packages/next-package/tests",
+            "A50\\RBAC\\Tests\\": "packages/rbac/tests",
+            "A50\\Seeder\\Tests\\": "packages/seeder/tests",
+            "A50\\Telegram\\Tests\\": "packages/telegram/tests"
+        }
+    },
+    "replace": {
+        "a50/clock": "self.version",
+        "a50/command-bus": "self.version",
+        "a50/console": "self.version",
+        "a50/container": "self.version",
+        "a50/database": "self.version",
+        "a50/directories": "self.version",
+        "a50/environment": "self.version",
+        "a50/error-handler": "self.version",
+        "a50/event-dispatcher": "self.version",
+        "a50/filesystem": "self.version",
+        "a50/http": "self.version",
+        "a50/logger": "self.version",
+        "a50/mailer": "self.version",
+        "a50/mapper": "self.version",
+        "a50/middleware-cors": "self.version",
+        "a50/next-package": "self.version",
+        "a50/rbac": "self.version",
+        "a50/seeder": "self.version",
+        "a50/telegram": "self.version",
+        "a50/uuid": "self.version"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "scripts": {
+        "cs.lint": "php-cs-fixer fix --config=.php-cs-fixer.php --allow-risky=yes --dry-run --diff",
+        "cs.fix": "php-cs-fixer fix --config=.php-cs-fixer.php --allow-risky=yes",
+        "analyse": "phpstan analyse -c phpstan.neon",
+        "test": "vendor/bin/phpunit --colors=always"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

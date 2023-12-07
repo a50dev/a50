@@ -1,0 +1,44 @@
+{
+    "name": "a50/container-php-di",
+    "description": "A50 Container",
+    "keywords": [
+        "a50",
+        "container",
+        "di",
+        "php-di"
+    ],
+    "homepage": "https://github.com/a50/container-php-di",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Siarhei Bautrukevich",
+            "email": "hello@bautrukevich.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "php-di/php-di": "^7.0",
+        "webmozart/assert": "^1.11",
+        "a50/container": "dev-main",
+        "ext-apcu": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "A50\\Container\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "A50\\Container\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

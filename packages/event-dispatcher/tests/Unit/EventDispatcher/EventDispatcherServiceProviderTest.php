@@ -1,0 +1,32 @@
+<?php
+
+declare(strict_types=1);
+
+namespace A50\EventDispatcher\Tests\Unit\EventDispatcher;
+
+use PHPUnit\Framework\Assert;
+use PHPUnit\Framework\TestCase;
+use Psr\EventDispatcher\EventDispatcherInterface;
+use Psr\EventDispatcher\ListenerProviderInterface;
+use A50\EventDispatcher\EventDispatcher;
+use A50\EventDispatcher\EventDispatcherConfig;
+use A50\EventDispatcher\EventDispatcherServiceProvider;
+
+/**
+ * @internal
+ */
+final class EventDispatcherServiceProviderTest extends TestCase
+{
+    /**
+     * @test
+     */
+    public function shouldContainDefinitions(): void
+    {
+        Assert::assertEquals([
+            ListenerProviderInterface::class,
+            EventDispatcher::class,
+            EventDispatcherInterface::class,
+            EventDispatcherConfig::class,
+        ], array_keys(EventDispatcherServiceProvider::getDefinitions()));
+    }
+}

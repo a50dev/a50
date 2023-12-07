@@ -1,0 +1,41 @@
+{
+    "name": "a50/environment",
+    "description": "A50 Environment",
+    "keywords": [
+        "a50",
+        "environment"
+    ],
+    "homepage": "https://github.com/a50/environment",
+    "type": "library",
+    "require": {
+        "php": "^8.1",
+        "webmozart/assert": "^1.11",
+        "a50/container": "dev-main"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Siarhei Bautrukevich",
+            "email": "hello@bautrukevich.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "A50\\Environment\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "A50\\Environment\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
