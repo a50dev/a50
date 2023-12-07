@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace A50\Container\PHPDI;
 
+use A50\Container\ServiceProvider;
 use DI\ContainerBuilder;
 use Exception;
 use InvalidArgumentException;
