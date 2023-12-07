@@ -19,7 +19,7 @@ final class ClockProvider implements ServiceProvider
                 /** @var ClockConfig $config */
                 $config = $container->get(ClockConfig::class);
 
-                return new TimeZoneAwareClock(new DateTimeZone($config->timezone()));
+                return new TimeZoneAwareClock($config->timezone());
             },
         ];
     }
