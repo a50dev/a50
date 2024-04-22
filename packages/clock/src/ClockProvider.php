@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace A50\Clock;
 
-use DateTimeZone;
 use Psr\Clock\ClockInterface;
 use Psr\Container\ContainerInterface;
 use A50\Container\ServiceProvider;

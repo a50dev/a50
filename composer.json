@@ -62,7 +62,10 @@
             "A50\\Console\\": [
                 "packages/console/src"
             ],
-            "A50\\Container\\": "packages/container/src",
+            "A50\\Container\\": [
+                "packages/container-php-di/src",
+                "packages/container/src"
+            ],
             "A50\\Database\\": [
                 "packages/database/src"
             ],
@@ -77,9 +80,6 @@
             ],
             "A50\\EventDispatcher\\": "packages/event-dispatcher/src",
             "A50\\Filesystem\\": "packages/filesystem/src",
-            "A50\\Framework\\": [
-                "packages/mailer/src"
-            ],
             "A50\\Http\\": [
                 "packages/http/src"
             ],
@@ -97,6 +97,10 @@
             "A50\\Telegram\\": [
                 "packages/telegram/src"
             ],
+            "A50\\Templates\\": [
+                "packages/templates/src",
+                "packages/templates-twig/src"
+            ],
             "A50\\Uuid\\": [
                 "packages/uuid/src"
             ]
@@ -104,15 +108,15 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\A50\\Uuid\\": [
-                "packages/uuid/tests"
-            ],
             "A50\\Clock\\Tests\\": [
                 "packages/clock/tests"
             ],
             "A50\\CommandBus\\Tests\\": "packages/command-bus/tests",
             "A50\\Console\\Tests\\": "packages/console/tests",
-            "A50\\Container\\Tests\\": "packages/container/tests",
+            "A50\\Container\\Tests\\": [
+                "packages/container-php-di/tests",
+                "packages/container/tests"
+            ],
             "A50\\Database\\Tests\\": [
                 "packages/database/tests"
             ],
@@ -125,7 +129,6 @@
             ],
             "A50\\EventDispatcher\\Tests\\": "packages/event-dispatcher/tests",
             "A50\\Filesystem\\Tests\\": "packages/filesystem/tests",
-            "A50\\Framework\\Tests\\": "packages/mailer/tests",
             "A50\\Http\\Tests\\": [
                 "packages/http/tests"
             ],
@@ -136,7 +139,14 @@
             "A50\\NextPackage\\Tests\\": "packages/next-package/tests",
             "A50\\RBAC\\Tests\\": "packages/rbac/tests",
             "A50\\Seeder\\Tests\\": "packages/seeder/tests",
-            "A50\\Telegram\\Tests\\": "packages/telegram/tests"
+            "A50\\Telegram\\Tests\\": "packages/telegram/tests",
+            "A50\\Templates\\Tests\\": [
+                "packages/templates/tests",
+                "packages/templates-twig/tests"
+            ],
+            "Tests\\A50\\Uuid\\": [
+                "packages/uuid/tests"
+            ]
         }
     },
     "replace": {
@@ -144,6 +154,7 @@
         "a50/command-bus": "self.version",
         "a50/console": "self.version",
         "a50/container": "self.version",
+        "a50/container-php-di": "self.version",
         "a50/database": "self.version",
         "a50/directories": "self.version",
         "a50/environment": "self.version",
@@ -159,6 +170,7 @@
         "a50/rbac": "self.version",
         "a50/seeder": "self.version",
         "a50/telegram": "self.version",
+        "a50/templates-twig": "self.version",
         "a50/uuid": "self.version"
     },
     "config": {

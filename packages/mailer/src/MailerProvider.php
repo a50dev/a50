@@ -12,7 +12,7 @@ use Symfony\Component\Mailer\Transport\Smtp\EsmtpTransportFactory;
 use Symfony\Component\Mailer\Transport\TransportInterface;
 use A50\Container\ServiceProvider;
 
-final class MailerServiceProvider implements ServiceProvider
+final class MailerProvider implements ServiceProvider
 {
     public static function getDefinitions(): array
     {
