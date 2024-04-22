@@ -98,8 +98,8 @@
                 "packages/telegram/src"
             ],
             "A50\\Templates\\": [
-                "packages/templates/src",
-                "packages/templates-twig/src"
+                "packages/templates-twig/src",
+                "packages/templates/src"
             ],
             "A50\\Uuid\\": [
                 "packages/uuid/src"
@@ -141,8 +141,8 @@
             "A50\\Seeder\\Tests\\": "packages/seeder/tests",
             "A50\\Telegram\\Tests\\": "packages/telegram/tests",
             "A50\\Templates\\Tests\\": [
-                "packages/templates/tests",
-                "packages/templates-twig/tests"
+                "packages/templates-twig/tests",
+                "packages/templates/tests"
             ],
             "Tests\\A50\\Uuid\\": [
                 "packages/uuid/tests"
