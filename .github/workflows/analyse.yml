@@ -22,7 +22,7 @@ name: static analysis
 
 jobs:
   phpstan:
-    uses: A50/actions/.github/workflows/phpstan.yml@main
+    uses: a50dev/actions/.github/workflows/phpstan.yml@main
     with:
       os: >-
         ['ubuntu-latest']
