@@ -12,7 +12,7 @@ use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\ContainerInterface;
 use Psr\Container\NotFoundExceptionInterface;
 use stdClass;
-use A50\Container\ContainerFactory;
+use A50\Container\PHPDI\ContainerFactory;
 use A50\Container\Tests\Datasets\AutowireInterfaces\Bar;
 use A50\Container\Tests\Datasets\AutowireInterfaces\CanAutowireInterfacesServiceProvider;
 use A50\Container\Tests\Datasets\AutowireInterfaces\Foo;
