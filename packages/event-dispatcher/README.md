@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://github.com/A50dev" target="_blank">
-        <img src="https://avatars0.githubusercontent.com/u/86768962" height="240px">
+        <img src="https://avatars.githubusercontent.com/u/150102356" height="240px">
     </a>
     <h1 align="center">A50 Event Dispatcher</h1>
     <br>
