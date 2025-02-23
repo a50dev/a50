@@ -1,5 +1,5 @@
 {
-    "name": "a50/database",
+    "name": "a50/database-all",
     "description": "Database Provider",
     "type": "project",
     "require": {
