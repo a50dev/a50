@@ -14,7 +14,7 @@
         "a50/directories": "dev-main",
         "a50/event-dispatcher": "dev-main",
         "yiisoft/cache": "^3.0",
-        "yiisoft/db-pgsql": "^1.1"
+        "yiisoft/db-pgsql": "^1.3.0"
     },
     "license": "MIT",
     "authors": [
