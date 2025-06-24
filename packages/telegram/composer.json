@@ -18,8 +18,7 @@
         "php": "^8.2",
         "telegram-bot/api": "^2.5",
         "a50/console": "dev-main",
-        "a50/container": "dev-main",
-        "a50/http": "dev-main"
+        "a50/container": "dev-main"
     },
     "autoload": {
         "psr-4": {

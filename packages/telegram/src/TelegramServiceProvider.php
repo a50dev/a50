@@ -10,8 +10,6 @@ use TelegramBot\Api\BotApi;
 use TelegramBot\Api\Client;
 use A50\Console\ConsoleConfig;
 use A50\Container\ServiceProvider;
-use A50\Http\Router\Route;
-use A50\Http\Router\RouterConfig;
 use A50\Telegram\Application\Bot\Telegram;
 use A50\Telegram\Application\SetBotCommands\SetBotCommandsHandler;
 use A50\Telegram\Application\SetBotWebhook\SetBotWebhookHandler;
@@ -19,7 +17,6 @@ use A50\Telegram\Infrastructure\Telegram\TelegramBot;
 use A50\Telegram\UI\Bot\Command\BotCommand;
 use A50\Telegram\UI\Console\Telegram\SetCommands;
 use A50\Telegram\UI\Console\Telegram\SetWebhookCommand;
-use A50\Telegram\UI\Http\ListenTelegramBotAction;
 
 final class TelegramServiceProvider implements ServiceProvider
 {
@@ -96,15 +93,6 @@ final class TelegramServiceProvider implements ServiceProvider
                 return $config
                     ->withCommand(SetCommands::class)
                     ->withCommand(SetWebhookCommand::class);
-            },
-            RouterConfig::class => static function (RouterConfig $config, ContainerInterface $container) {
-                /** @var TelegramConfig $telegramConfig */
-                $telegramConfig = $container->get(TelegramConfig::class);
-
-                return $config
-                    ->withRoute(
-                        Route::post('/bot/' . $telegramConfig->token() . '/listen', ListenTelegramBotAction::class)
-                    );
             },
         ];
     }
